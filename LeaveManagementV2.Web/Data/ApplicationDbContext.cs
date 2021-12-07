@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace LeaveManagement.Web.Data
+namespace LeaveManagementV2.Web.Data
 {
     public class ApplicationDbContext : IdentityDbContext<Employee>
     {
@@ -12,6 +12,5 @@ namespace LeaveManagement.Web.Data
 
         public DbSet<LeaveType> LeaveTypes { get; set; }
         public DbSet<LeaveAllocation> LeaveAllocations { get; set; }
-
     }
 }
